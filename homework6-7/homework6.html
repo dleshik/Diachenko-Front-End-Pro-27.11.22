@@ -8,40 +8,43 @@
 </head>
 <body>
     <script>
-       const calc = prompt(`Enter operation type`,'+'); 
+        const calc = prompt(`Enter operation type`,'+'); 
 
-        let a = +prompt (`Enter first number`);
-        let b = +prompt (`Enter second number`);
+        const a = +prompt (`Enter first number`); 
+        const b = +prompt (`Enter second number`);
+
+        let result;
         
         switch(calc) {
-            case '+': {
+                case '+': {
                 result = a + b;
                 alert (`Result is: ${a}+${b} = ${result}`);
-                    }
+                }
                 break;
-        
+                
                 case '-': {
                 result = a - b;
                 alert (`Result is: ${a}-${b} = ${result}`);
-                    }
+                   
+                }
                 break;
-
+                
                 case '*': {
                 result = a * b;
                 alert (`Result is: ${a}*${b} = ${result}`);
-                    }
+                }
                 break;
 
-            case '/': {
+                case '/': {
                 result = a / b;
                 alert (`Result is: ${a}/${b} = ${result}`);
-                    }
+                }
                 break;
-
-            default: {
+                
+                default: {
                 alert('Unknown operation!');
+                }
             }
-        }
     </script>
 </body>
 </html>
